@@ -11,10 +11,15 @@ SHOWS = [
 
 
 def main():
+    cleaned_shows = []
     for show in SHOWS:
+        cleaned_shows.append(show.strip().title())
+
+    print(", ".join(cleaned_shows))
+#    print(cleaned_shows)
 #        print(show.strip())
 #        print(show.capitalize())
-        print(show.strip().title())
+#        print(show.strip().title())
 
 
 main()
