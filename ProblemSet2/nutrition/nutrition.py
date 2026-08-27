@@ -16,24 +16,28 @@ fruitsdict = {
             "Pineapple": "50",
             "Plums": "70",
             "Strawberries": "50",
-            "Sweet Cherries": "100",
+            "Cherries": "100",
             "Tangerline": "50",
             "Watermelon": "80"
-              }
+            }
 
 def main():
 
+    formatted_list = set(key.lower() for key in fruitsdict)
+
     user_input = input("Item: ")
 
-    if user_input in fruitsdict:
-        print("Calories: ",fruitsdict[user_input])
+    while True:
+        if user_input in fruitsdict:
+            print("Calories: ",fruitsdict[user_input])
+            break
 
-    else: 
-        return
+        elif user_input in formatted_list:
+            user_input.capitalize()
+            print("Calories: ", fruitsdict[user_input.capitalize()])
+            break
 
-
-
-def CaseInsensitiveDict(dict):
-    ...
+        else: 
+            break
 
 main()
