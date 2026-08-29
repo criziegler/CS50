@@ -1,7 +1,7 @@
 # CS50
 Python CS50 Course
 
-# TO DO
+## TO DO
 - [x] ProblemSet0 submitted
     - [x] faces
     - [x] einstein
