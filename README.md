@@ -10,3 +10,15 @@ Python CS50 Course
     - [x] tip
 
 - [ ] ProblemSet1 submitted
+    - [ ] deep
+    - [ ] bank
+    - [ ] extensions
+    - [ ] interpreter
+    - [ ] meal
+
+- [ ] ProblemSet2 submitted
+    - [ ] camel
+    - [ ] coke
+    - [ ] nutrition
+    - [ ] plates
+    - [ ] twttr
