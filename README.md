@@ -9,12 +9,12 @@ Python CS50 Course
     - [x] playback
     - [x] tip
 
-- [ ] ProblemSet1 submitted
-    - [ ] deep
-    - [ ] bank
-    - [ ] extensions
-    - [ ] interpreter
-    - [ ] meal
+- [x] ProblemSet1 submitted
+    - [x] deep
+    - [x] bank
+    - [x] extensions
+    - [x] interpreter
+    - [x] meal
 
 - [ ] ProblemSet2 submitted
     - [ ] camel

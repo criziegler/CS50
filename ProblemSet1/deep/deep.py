@@ -4,10 +4,10 @@ def main():
     if UserInput == "42":
         print("Yes")
 
-    elif UserInput == "forty-two":
+    elif UserInput == "forty-two" or UserInput == "Forty-Two":
         print("Yes")
 
-    elif UserInput == "forty two":
+    elif UserInput == "forty two" or UserInput == "Forty Two":
         print("Yes")
 
     else:

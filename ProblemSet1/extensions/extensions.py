@@ -2,13 +2,13 @@ ImageInput = input("File name: ")
 
 def main():
     if ImageInput.endswith(".gif"):
-        print("Image/gif")
+        print("image/gif")
     
     elif ImageInput.endswith(".jpg") or ImageInput.endswith(".jpeg"):
-        print("Image/jpeg")
+        print("image/jpeg")
 
     elif ImageInput.endswith(".png"):
-        print("Image/png")
+        print("image/png")
 
     elif ImageInput.endswith(".pdf"):
         print("application/pdf")
