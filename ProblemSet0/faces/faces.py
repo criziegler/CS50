@@ -1,15 +1,19 @@
 
-UserInput = input()
 
 def main():
-    if UserInput == "Hello :)":
-        print(UserInput)
 
-    elif UserInput == "Goodbye :(":
-        print(UserInput)
+    UserInput = input("")
 
-    elif UserInput == "Hello :) Goodbye :(":
-        print(UserInput)
+    if UserInput == "hello :)" or UserInput == "Hello :)":
+        print("Hello 🙂")
 
+    elif UserInput == "goodbye :(" or UserInput == "Goodbye :(":
+        print("Goodbye 🙁")
+
+    elif UserInput == "Hello :) Goodbye :(" or UserInput == "hello :) goodbye :(":
+        print("Hello 🙂 Goodbye 🙁")
+
+    else:
+        return
 
 main()
