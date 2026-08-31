@@ -28,3 +28,37 @@ Python CS50 Course
     - [ ] Felipe's Taqueria
     - [ ] Grocery List
     - [ ] Outdated
+
+- [ ] ProblemSet4 submitted
+    - [ ] Emojize
+    - [ ] Frank, Ian and Glen's Letters
+    - [ ] Adieu, Adieu
+    - [ ] Guessing Game
+    - [ ] Little Professor
+    - [ ] Bitcoin Price Index
+
+- [ ] ProblemSet5 submitted
+    - [ ] Testing my twittr
+    - [ ] Back to the Bank
+    - [ ] Re-requesting a Vanity Plate
+    - [ ] Refueling
+
+- [ ] ProblemSet6 submitted
+    - [ ] Lines of Code
+    - [ ] Pizza Py
+    - [ ] Scourgify
+    - [ ] CS50 P-Shirt
+
+- [ ] ProblemSet7 submitted
+    - [ ] NUMB3RS
+    - [ ] Watch on YouTube
+    - [ ] Working 9 to 5
+    - [ ] Regular, um, Expressions
+    - [ ] Response Validation
+
+- [ ] ProblemSet8 submitted
+    - [ ] Seasons of Love
+    - [ ] Cookie Jar
+    - [ ] CS50 Shirtificate
+
+- [ ] Final Project submitted
