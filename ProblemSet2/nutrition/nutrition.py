@@ -16,7 +16,7 @@ fruitsdict = {
             "Pineapple": "50",
             "Plums": "70",
             "Strawberries": "50",
-            "Cherries": "100",
+            "Sweet Cherries": "100",
             "Tangerline": "50",
             "Watermelon": "80"
             }
@@ -29,12 +29,12 @@ def main():
 
     while True:
         if user_input in fruitsdict:
-            print("Calories: ",fruitsdict[user_input])
+            print("Calories:",fruitsdict[user_input])
             break
 
         elif user_input in formatted_list:
             user_input.capitalize()
-            print("Calories: ", fruitsdict[user_input.capitalize()])
+            print("Calories:",fruitsdict[user_input.capitalize()])
             break
 
         else: 
