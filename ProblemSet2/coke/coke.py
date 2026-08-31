@@ -10,12 +10,15 @@ def main():
             amount_due -= n
 
             if amount_due <= 0:
-                print("Change Owed: ", abs(amount_due))
+                print("Change Owed:",abs(amount_due))
 
                 break
 
             else: 
-                print("Amount Due: ",amount_due)
 
+                print("Amount Due:",amount_due)
+
+        else:
+            print("Amount Due:",amount_due)
         
 main()
