@@ -23,8 +23,8 @@ Python CS50 Course
     - [x] Vanity Plates
     - [x] Nutrition Facts
 
-- [ ] ProblemSet3 submitted
-    - [ ] Fuel Gauge
+- [x] ProblemSet3 submitted
+    - [x] Fuel Gauge
     - [ ] Felipe's Taqueria
     - [ ] Grocery List
     - [ ] Outdated
