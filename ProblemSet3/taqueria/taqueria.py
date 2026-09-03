@@ -22,17 +22,10 @@ def main():
         print("\n")
         return
 
-# def case_insensetive_input(menu, query):
-#     query_normal = query.lower()
-#     for key, value in menu.items():
-#         if isinstance(key, str) and key.lower() == query_normal:
-#             return value
-#         return None
 
 def get_input(prompt):
     lower_dict = {key.lower(): value for key, value in menu.items()}
-    upper_dict = {k.upper(): v for k, v in menu.items()}
-
+    
     total = 0.00
 
     while True:
@@ -46,8 +39,9 @@ def get_input(prompt):
                 total = total + lower_dict[item]
                 print(f"Total: ${total:.2f}")
 
-            elif item in upper_dict:
-                total = total + upper_dict[item]
+            else:
+                item.lower()
+                total = total + lower_dict[item.lower()]
                 print(f"Total: ${total:.2f}")
 
         except KeyError:
