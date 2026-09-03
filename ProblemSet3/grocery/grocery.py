@@ -1,11 +1,13 @@
 def main():
 
     grocery = []
+    lower_list = []
+    upper_list = []
 
     while True:
         try:
             item = input()
-            grocery.insert(0, item)
+            grocery.append(item)
 
         except KeyboardInterrupt:
             print(grocery)
