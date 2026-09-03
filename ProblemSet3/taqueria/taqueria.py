@@ -12,7 +12,7 @@ menu = {
 
 def main():
     try:
-        order = get_input("Item: ")
+        get_input("Item: ")
 
     except KeyboardInterrupt:
         print("\n")
@@ -22,8 +22,16 @@ def main():
         print("\n")
         return
 
+# def case_insensetive_input(menu, query):
+#     query_normal = query.lower()
+#     for key, value in menu.items():
+#         if isinstance(key, str) and key.lower() == query_normal:
+#             return value
+#         return None
+
 def get_input(prompt):
-    formatted_list = set(key.lower() for key in menu)
+    lower_dict = {key.lower(): value for key, value in menu.items()}
+    upper_dict = {k.upper(): v for k, v in menu.items()}
 
     total = 0.00
 
@@ -34,8 +42,12 @@ def get_input(prompt):
                 total = total + menu[item]
                 print(f"Total: ${total:.2f}")
 
-            elif item in formatted_list:
-                total = total + menu[item.title()]
+            elif item in lower_dict:
+                total = total + lower_dict[item]
+                print(f"Total: ${total:.2f}")
+
+            elif item in upper_dict:
+                total = total + upper_dict[item]
                 print(f"Total: ${total:.2f}")
 
         except KeyError:
