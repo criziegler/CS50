@@ -15,29 +15,40 @@ def main():
         "December"
     ]
 
+    months_with_30_days = [4, 6, 9, 11]
+
     while True:
 
         try:
             date_input = input("Date: ")
             start_with_digit = (date_input[:1].isdigit())
+            # months_with_30_days = [4, 6, 9, 11]
 
             if start_with_digit:
                 x, y, z = date_input.split("/")
                 x = int(x)
                 y = int(y)
-                if x <= 9 and y >= 10:
-                    print(f"{z}-0{x}-{y}")
-                    return
-                elif y <= 9 and x >= 10:
-                    print(f"{z}-{x}-0{y}")
-                    return
-                elif x <= 9 and y <= 9:
-                    print(f"{z}-0{x}-0{y}")
-                    return
+                if x <= 12 and y <= 31:
+                    if x in months_with_30_days and y > 30:
+                        pass
+                    elif x == 2 and y > 29:
+                        pass
+                    else:    
+                        if x <= 9 and y >= 10:
+                            print(f"{z}-0{x}-{y}")
+                            return
+                        elif y <= 9 and x >= 10:
+                            print(f"{z}-{x}-0{y}")
+                            return
+                        elif x <= 9 and y <= 9:
+                            print(f"{z}-0{x}-0{y}")
+                            return
+                        else:
+                            print(f"{z}-{x}-{y}")
+                            return
                 else:
-                    print(f"{z}-{x}-{y}")
                     return
-                
+                    
             elif date_input.startswith(tuple(months)):
                 print("yes")
             
