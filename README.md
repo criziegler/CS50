@@ -25,8 +25,8 @@ Python CS50 Course
 
 - [x] ProblemSet3 submitted
     - [x] Fuel Gauge
-    - [ ] Felipe's Taqueria
-    - [ ] Grocery List
+    - [x] Felipe's Taqueria
+    - [x] Grocery List
     - [ ] Outdated
 
 - [ ] ProblemSet4 submitted
