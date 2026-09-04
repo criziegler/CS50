@@ -17,6 +17,8 @@ def main():
 
     months_with_30_days = [4, 6, 9, 11]
 
+    months_with_30_days_string = ["April", "June", "September", "November"]
+
     while True:
 
         try:
@@ -47,7 +49,7 @@ def main():
                             print(f"{z}-{x}-{y}")
                             return
                 else:
-                    return
+                    pass
                     
             elif date_input.startswith(tuple(months)):
                 print("yes")
