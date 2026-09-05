@@ -56,13 +56,13 @@ def main():
                 b_formatted = b.strip(",")
                 print(b_formatted)
                 b_formatted = int(b_formatted)
-                
+
                 if a in months_with_30_days_string and b_formatted > 30:
                     pass
                 elif a == "February" and b_formatted > 29:
                     pass
                 else:
-                    print("good")
+                    ...
             
             else:
                 pass 
