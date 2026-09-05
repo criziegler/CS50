@@ -24,7 +24,7 @@ def main():
         try:
             date_input = input("Date: ")
             start_with_digit = (date_input[:1].isdigit())
-            # months_with_30_days = [4, 6, 9, 11]
+            starts_with_month = (date_input.startswith(tuple(months)))
 
             if start_with_digit:
                 x, y, z = date_input.split("/")
@@ -51,8 +51,18 @@ def main():
                 else:
                     pass
                     
-            elif date_input.startswith(tuple(months)):
-                print("yes")
+            elif starts_with_month:
+                a, b, c = date_input.split(" ")
+                b_formatted = b.strip(",")
+                print(b_formatted)
+                b_formatted = int(b_formatted)
+                
+                if a in months_with_30_days_string and b_formatted > 30:
+                    pass
+                elif a == "February" and b_formatted > 29:
+                    pass
+                else:
+                    print("good")
             
             else:
                 pass 
