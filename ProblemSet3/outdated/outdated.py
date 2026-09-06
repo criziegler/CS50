@@ -15,9 +15,9 @@ def main():
         "December"
     ]
 
-    months_with_30_days = [4, 6, 9, 11]
+    months_value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-    months_with_30_days_string = ["April", "June", "September", "November"]
+    months_with_30_days = [4, 6, 9, 11]
 
     while True:
 
@@ -54,16 +54,27 @@ def main():
             elif starts_with_month:
                 a, b, c = date_input.split(" ")
                 b_formatted = b.strip(",")
-                print(b_formatted)
                 b_formatted = int(b_formatted)
 
-                if a in months_with_30_days_string and b_formatted > 30:
+                if any(months[i] == a for i in months_with_30_days) and b_formatted > 30:
                     pass
                 elif a == "February" and b_formatted > 29:
                     pass
                 else:
-                    ...
-            
+                    months_dict = dict(zip(months, months_value))
+
+                    if a in months[:9] and b_formatted >= 10:
+                        print(f"{c}-0{months_dict[a]}-{b_formatted}")
+                        return
+                    elif b_formatted <= 9 and a in months[:10]:
+                        print(f"{c}-{months_dict[a]}-0{b_formatted}")
+                        return
+                    elif a in months[:9] and b_formatted <= 9:
+                        print(f"{c}-0{months_dict[a]}-0{b_formatted}")
+                        return
+                    else:
+                        print(f"{c}-{months_dict[a]}-{b_formatted}")
+                        return
             else:
                 pass 
 
