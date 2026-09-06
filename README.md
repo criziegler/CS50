@@ -27,7 +27,7 @@ Python CS50 Course
     - [x] Fuel Gauge
     - [x] Felipe's Taqueria
     - [x] Grocery List
-    - [ ] Outdated
+    - [x] Outdated
 
 - [ ] ProblemSet4 submitted
     - [ ] Emojize
