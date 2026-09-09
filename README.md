@@ -30,7 +30,7 @@ Python CS50 Course
     - [x] Outdated
 
 - [ ] ProblemSet4 submitted
-    - [ ] Emojize
+    - [x] Emojize
     - [ ] Frank, Ian and Glen's Letters
     - [ ] Adieu, Adieu
     - [ ] Guessing Game
