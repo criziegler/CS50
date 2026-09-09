@@ -1,16 +1,16 @@
-import pyfiglet
+from pyfiglet import Figlet
 import sys
+import random
 
+figlet = Figlet()
 
 def main():
 
+
     user_input = input("Input: ")
 
-    if len(sys.argv) == 2:
-        print(pyfiglet.figlet_format(user_input, sys.argv[2]))
 
-    else:
-        print(pyfiglet.figlet_format(user_input))
+    print(figlet.renderText(user_input))
 
 
 
