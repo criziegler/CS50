@@ -6,18 +6,15 @@ from pyfiglet import Figlet
 def main():
 
     figlet = Figlet()
-    user_input = input("Input: ")
 
-    if sys.argv[2] in figlet.getFonts():
-        x, y = sys.argv[2].split(" ")
-        print (x,y)
-        print(figlet.renderText(user_input))
+    if len(sys.argv) < 2:
+        sys.exit("Invalid usage")
 
-    elif figlet.setFont(font="slant"):
-        print(figlet.renderText(user_input, font="slant"))
-    else:
-        ...
+    elif sys.argv[1] == "-f":
+        if len(sys.argv) < 4:
+            sys.exit("Invalid usage")
 
+        font = sys.argv[2]
 
-
+  
 main()
