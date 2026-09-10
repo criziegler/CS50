@@ -7,14 +7,20 @@ def main():
 
     figlet = Figlet()
 
-    if len(sys.argv) < 2:
-        sys.exit("Invalid usage")
-
-    elif sys.argv[1] == "-f":
-        if len(sys.argv) < 4:
+    if sys.argv[1] == "-f" or sys.argv[1] == "--font":
+        if len(sys.argv) < 2:
             sys.exit("Invalid usage")
 
-        font = sys.argv[2]
+        figlet.getFonts()
+        fonts = sys.argv[2:4]
+        font = fonts[0]
+        print(font)
+        figlet.setFont(font=font)
+        text = input("Input: ")
+        output = figlet.renderText(text)
+        print("Output: ", output)
 
-  
+
+
+
 main()
