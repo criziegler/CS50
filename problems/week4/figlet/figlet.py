@@ -16,7 +16,6 @@ def main():
             figlet.getFonts()
             fonts = sys.argv[2:4]
             font = fonts[0]
-            print(font)
             figlet.setFont(font=font)
             text = input("Input: ")
             output = figlet.renderText(text)
