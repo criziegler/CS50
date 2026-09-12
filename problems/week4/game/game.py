@@ -2,8 +2,13 @@ import random
 
 def main():
 
-        n = random.choice(range(0, 100, 1))
-        print("Level: ", n)
+    level = input("Level: ")
+    level = int(level)
 
+    if level > 0:
+        guess = input("Guess: ")
+
+
+            
 
 main()
