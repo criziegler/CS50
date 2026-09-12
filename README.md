@@ -32,7 +32,7 @@ Python CS50 Course
 - [ ] Week4 submitted
     - [x] Emojize
     - [x] Frank, Ian and Glen's Letters
-    - [ ] Adieu, Adieu
+    - [x] Adieu, Adieu
     - [ ] Guessing Game
     - [ ] Little Professor
     - [ ] Bitcoin Price Index
