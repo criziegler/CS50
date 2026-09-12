@@ -33,7 +33,7 @@ Python CS50 Course
     - [x] Emojize
     - [x] Frank, Ian and Glen's Letters
     - [x] Adieu, Adieu
-    - [ ] Guessing Game
+    - [x] Guessing Game
     - [ ] Little Professor
     - [ ] Bitcoin Price Index
 
