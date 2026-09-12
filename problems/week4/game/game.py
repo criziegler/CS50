@@ -3,24 +3,42 @@ import random
 def main():
 
     while True:
-        try:
 
+        try:
             level = input("Level: ")
             level = int(level)
 
             if level > 0:
                 n = random.choice(range(0, level, 1))
-                guess = input("Guess: ")
-                guess = int(guess)
-                print(n)
 
-                if guess == n:
-                    print("Yes")
-                    return
+                while True:
 
-                else:
-                    print("Wrong")
-                    pass
+                    guess = input("Guess: ")
+                    guess = int(guess)
+
+                    try:
+                        if guess > 0:
+                            if guess == n:
+                                print("Just right!")
+                                return
+
+                            elif guess > n:
+                                print("Too large!")
+                                pass
+
+                            elif guess < n:
+                                print("Too small!")
+                                pass
+                        else:
+                            pass
+
+                    except KeyboardInterrupt:
+                        return
+                
+                    except EOFError:
+                        return
+            else:
+                pass
 
         except KeyboardInterrupt:
             return
@@ -28,6 +46,8 @@ def main():
         except EOFError:
             return
 
+        except ValueError:
+            pass                      
             
 
 main()
