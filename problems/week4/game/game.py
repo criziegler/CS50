@@ -2,12 +2,31 @@ import random
 
 def main():
 
-    level = input("Level: ")
-    level = int(level)
+    while True:
+        try:
 
-    if level > 0:
-        guess = input("Guess: ")
+            level = input("Level: ")
+            level = int(level)
 
+            if level > 0:
+                n = random.choice(range(0, level, 1))
+                guess = input("Guess: ")
+                guess = int(guess)
+                print(n)
+
+                if guess == n:
+                    print("Yes")
+                    return
+
+                else:
+                    print("Wrong")
+                    pass
+
+        except KeyboardInterrupt:
+            return
+
+        except EOFError:
+            return
 
             
 
