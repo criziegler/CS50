@@ -13,11 +13,20 @@ def get_level(prompt):
             n = int(n)
 
             if n == 1:
-                x = generate_integer(n)
-                y = generate_integer(n)
-                print(x)
-                print(y)
-                return
+                while True:
+                    x = generate_integer(n)
+                    y = generate_integer(n)
+
+                    result = x + y
+
+                    user_result = input(f"{x} + {y} = ")
+
+                    if result == user_result:
+                        print("yes")
+                        break
+
+                    else:
+                        break
              
             elif n == 2:
                 x = generate_integer(n)
@@ -44,22 +53,20 @@ def get_level(prompt):
 
 def generate_integer(level):
 
-    try:
-
         if level == 1:
             level = random.choice(range(0, 10, 1))
-            return level
+            return int(level)
 
         elif level == 2:
             level = random.choice(range(0, 20, 1))
-            return level
+            return int(level)
         
         elif level == 3:
             level = random.choice(range(0, 30, 1))
-            return level
+            return int(level)
         
-    except ValueError:
-        pass
+        else:
+            raise ValueError
 
 if __name__ == "__main__":
     main()  
