@@ -4,7 +4,7 @@ def main():
 
     try:
          
-        m = get_level("Level: ")
+        m = get_level()
         score = 0
         x0 = generate_integer(m)
         y0 = generate_integer(m)
@@ -29,19 +29,17 @@ def main():
         if attempts0 == 3:
             print(f"{x0} + {y0} =", result0)
 
-    except ValueError:
-         return
 
     except KeyboardInterrupt:
-         return
+        return
 
     except EOFError:
         return
 
-def get_level(prompt):
+def get_level():
 
     while True:
-            n = input(prompt)
+            n = input("Level: ")
             n = int(n)
 
             if n == 1 or n == 2 or n == 3:
@@ -53,15 +51,15 @@ def get_level(prompt):
 def generate_integer(level):
 
         if level == 1:
-            level = random.choice(range(0, 10, 1))
+            level = random.choice(range(0, 9, 1))
             return int(level)
 
         elif level == 2:
-            level = random.choice(range(0, 20, 1))
+            level = random.choice(range(10, 99, 1))
             return int(level)
         
         elif level == 3:
-            level = random.choice(range(0, 30, 1))
+            level = random.choice(range(100, 99, 1))
             return int(level)
         
         else:
