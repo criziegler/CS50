@@ -17,7 +17,7 @@ def main():
                     guess = int(guess)
 
                     try:
-                        if guess > 0:
+                        if guess >= 0:
                             if guess == n:
                                 print("Just right!")
                                 return
