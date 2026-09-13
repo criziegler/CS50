@@ -29,7 +29,6 @@ def main():
         if attempts0 == 3:
             print(f"{x0} + {y0} =", result0)
 
-
     except KeyboardInterrupt:
         return
 
@@ -39,6 +38,8 @@ def main():
 def get_level():
 
     while True:
+        try:
+            
             n = input("Level: ")
             n = int(n)
 
@@ -46,20 +47,23 @@ def get_level():
                 return n
 
             else:
-                return n
+                pass
+
+        except ValueError:
+            pass
 
 def generate_integer(level):
 
         if level == 1:
-            level = random.choice(range(0, 9, 1))
+            level = random.randint(0, 9)
             return int(level)
 
         elif level == 2:
-            level = random.choice(range(10, 99, 1))
+            level = random.randint(10, 99)
             return int(level)
         
         elif level == 3:
-            level = random.choice(range(100, 99, 1))
+            level = random.randint(100, 999)
             return int(level)
         
         else:
