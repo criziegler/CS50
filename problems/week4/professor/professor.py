@@ -16,35 +16,29 @@ def get_level(prompt):
             if n == 1 or n == 2 or n == 3:
                 x0 = generate_integer(n)
                 y0 = generate_integer(n)
+                attempts0 = 0
 
-                while True:
+                while attempts0 < 3:
                     math0 = input(f"{x0} + {y0} = ")
                     math0 = int(math0)
                     result0 = x0 + y0
 
                     if result0 == math0:
-                        score += 1
+                        score = score + 1
                         print("Score:", score)
                         break
 
                     elif result0 != math0:
-                        for _ in range(3):
-                            if result0 == math0:
-                                score += 1
-                                return
-                            
-                            elif result0 != math0:
-                                print("EEE")
-                                pass
-                            
-                            else:
-                                print(f"{x0} + {y0} =", result0)
+                            attempts0 = attempts0 + 1
+                            print("EEE")
+                            pass    
+                    
+                if attempts0 == 3:
+                    print(f"{x0} + {y0} =", result0)
 
-                    else:
-                        pass
             else:
                 pass
-
+            
         except KeyboardInterrupt:
             return
 
