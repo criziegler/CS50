@@ -2,8 +2,7 @@ import random
 
 def main():
 
-    while True:
-        lev = get_level("Level: ")
+    lev = get_level("Level: ")
 
 
 def get_level(prompt):
@@ -15,8 +14,15 @@ def get_level(prompt):
             n = input(prompt)
             n = int(n)
 
-            if n in level_list:
+            if n == 1:
                 print("yes")
+                return 1
+            elif n == 2:
+                print("yes")
+                return 2
+            elif n == 3:
+                print("yes")
+                return 3
             else:
                 pass
 
