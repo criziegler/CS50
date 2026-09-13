@@ -2,7 +2,7 @@ import random
 
 def main():
 
-    lev = get_level("Level: ")
+    user_input = get_level("Level: ")
 
 
 def get_level(prompt):
@@ -12,35 +12,23 @@ def get_level(prompt):
             n = input(prompt)
             n = int(n)
 
-            if n == 1:
+            if n == 1 or n == 2 or n == 3:
+                x0 = generate_integer(n)
+                y0 = generate_integer(n)
+                math0 = input(f"{x0} + {y0} = ")
+                result0 = x0 + y0
+
                 while True:
-                    x = generate_integer(n)
-                    y = generate_integer(n)
-
-                    result = x + y
-
-                    user_result = input(f"{x} + {y} = ")
-
-                    if result == user_result:
+                    if result0 == math0:
                         print("yes")
                         break
+                    elif result0 != math0:
+                        for i in range(3):
+                            print("EEE")
+                        print(result0)
 
                     else:
                         break
-             
-            elif n == 2:
-                x = generate_integer(n)
-                y = generate_integer(n)
-                print(x)
-                print(y)
-                return
-             
-            elif n == 3:
-                x = generate_integer(n)
-                y = generate_integer(n)
-                print(x)
-                print(y)
-                return
             
             else:
                 pass
