@@ -28,12 +28,20 @@ def get_level(prompt):
                         break
 
                     elif result0 != math0:
-                        print("EEE")
-                        pass
+                        for _ in range(3):
+                            if result0 == math0:
+                                score += 1
+                                return
+                            
+                            elif result0 != math0:
+                                print("EEE")
+                                pass
+                            
+                            else:
+                                print(f"{x0} + {y0} =", result0)
 
                     else:
-                        break
-            
+                        pass
             else:
                 pass
 
