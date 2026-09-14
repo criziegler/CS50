@@ -3,31 +3,32 @@ import random
 def main():
 
     try:
-         
+ 
         m = get_level()
         score = 0
-        x0 = generate_integer(m)
-        y0 = generate_integer(m)
+        attempts = 0
 
-        attempts0 = 0
-    
-        while attempts0 < 3:
-            math0 = input(f"{x0} + {y0} = ")
-            math0 = int(math0)
-            result0 = x0 + y0
-    
-            if result0 == math0:
-                score = score + 1
-                print("Score:", score)
-                break
-    
-            elif result0 != math0:
-                attempts0 = attempts0 + 1
-                print("EEE")
-                pass    
-                        
-        if attempts0 == 3:
-            print(f"{x0} + {y0} =", result0)
+        for xy in range(10):
+            x = generate_integer(m)
+            y = generate_integer(m)
+
+            for attempts in range(3):
+                user_input = input(f"{x} + {y} = ")
+                result = x + y
+
+                if int(user_input) == x + y:
+                    score = score + 1
+                    break
+
+                else:
+                    print("EEE")
+                    if attempts == 2:
+                        print(f"{x} + {y} = {result}")
+
+                attempts = attempts + 1
+
+        print("Score:", score)
+        return
 
     except KeyboardInterrupt:
         return
@@ -39,7 +40,6 @@ def get_level():
 
     while True:
         try:
-            
             n = input("Level: ")
             n = int(n)
 
