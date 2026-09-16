@@ -39,7 +39,7 @@ Python CS50 Course
 
 - [ ] Week5 submitted
     - [x] Testing my twittr
-    - [ ] Back to the Bank
+    - [x] Back to the Bank
     - [ ] Re-requesting a Vanity Plate
     - [ ] Refueling
 
