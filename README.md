@@ -38,7 +38,7 @@ Python CS50 Course
     - [ ] Bitcoin Price Index
 
 - [ ] Week5 submitted
-    - [ ] Testing my twittr
+    - [x] Testing my twittr
     - [ ] Back to the Bank
     - [ ] Re-requesting a Vanity Plate
     - [ ] Refueling
