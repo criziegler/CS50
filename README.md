@@ -29,19 +29,19 @@ Python CS50 Course
     - [x] Grocery List
     - [x] Outdated
 
-- [ ] Week4 submitted
+- [x] Week4 submitted
     - [x] Emojize
     - [x] Frank, Ian and Glen's Letters
     - [x] Adieu, Adieu
     - [x] Guessing Game
     - [x] Little Professor
-    - [ ] Bitcoin Price Index
+    - [x] Bitcoin Price Index
 
-- [ ] Week5 submitted
+- [x] Week5 submitted
     - [x] Testing my twittr
     - [x] Back to the Bank
     - [x] Re-requesting a Vanity Plate
-    - [ ] Refueling
+    - [x] Refueling
 
 - [ ] Week6 submitted
     - [ ] Lines of Code
