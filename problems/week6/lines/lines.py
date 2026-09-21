@@ -16,17 +16,16 @@ else:
                 loc.append(lines.strip())
 
             lines_list = [line for line in loc if line.strip()]
-            # filtered_list = list(filter(lambda s: not s.startswith("#"), lines_file))
             count = 0
 
             for word in lines_list:
-                if word.startswith("#"):
+                if word.startswith("#") or word.startswith("...") or word.startswith("*"):
                     lines_list.remove(word)
                     count += 1
 
                 else:
                     count += 1
-        
+
         print(count)
 
     else:
