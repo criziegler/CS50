@@ -11,12 +11,21 @@ elif len(sys.argv) == 3:
 else:
     if sys.argv[1].endswith(".py"):
         with open(sys.argv[1], "r") as file:
-            lines = file.readlines()
+
+            for lines in file:
+                loc.append(lines.strip())
+
+            lines_list = [line for line in loc if line.strip()]
+            # filtered_list = list(filter(lambda s: not s.startswith("#"), lines_file))
             count = 0
-            lines_list = [line for line in lines if line.strip()]
-            
-            for line in lines_list:
-                count += 1
+
+            for word in lines_list:
+                if word.startswith("#"):
+                    lines_list.remove(word)
+                    count += 1
+
+                else:
+                    count += 1
         
         print(count)
 
