@@ -44,7 +44,7 @@ Python CS50 Course
     - [x] Refueling
 
 - [ ] Week6 submitted
-    - [ ] Lines of Code
+    - [x] Lines of Code
     - [ ] Pizza Py
     - [ ] Scourgify
     - [ ] CS50 P-Shirt
