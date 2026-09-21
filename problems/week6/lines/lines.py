@@ -11,10 +11,11 @@ elif len(sys.argv) == 3:
 else:
     if sys.argv[1].endswith(".py"):
         with open(sys.argv[1], "r") as file:
-            # lines = file.read()
             lines = file.readlines()
             count = 0
-            for line in lines:
+            lines_list = [line for line in lines if line.strip()]
+            
+            for line in lines_list:
                 count += 1
         
         print(count)
