@@ -10,7 +10,13 @@ elif len(sys.argv) == 3:
 
 else:
     if sys.argv[1].endswith(".py"):
-        print("yes")
+        with open(sys.argv[1], "r") as file:
+            lines = file.readlines()
+            for line in lines:
+                f = line.split("\n")
+                loc.append(f)
+        
+        print(loc)
 
     else:
         sys.exit("Not a Python file")
