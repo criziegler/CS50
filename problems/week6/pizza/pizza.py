@@ -1,7 +1,7 @@
 import sys
 import csv
 
-from table2ascii import table2ascii, Alignment, PresetStyle
+from tabulate import tabulate
 
 
 if len(sys.argv) == 1:
@@ -14,22 +14,9 @@ else:
     if sys.argv[1].endswith(".csv"):
         with open(sys.argv[1], "r") as file:
 
-            menu_body = {}
-            
-            menu = csv.DictReader(file)
-            for row in menu:
-                ...
+            table = list(csv.DictReader(file))
 
-            print(menu)
-
-            # menu = table2ascii(
-            #     header = menu_header,
-            #     body = [menu_body[:]],
-            #     style=PresetStyle.ascii_box
-            # ) 
-
-            # print(menu)
-
+            print(tabulate(table, headers = "keys", tablefmt="grid"))
 
     else:
         sys.exit("Not a CSV file")
