@@ -1,4 +1,6 @@
 import sys
+import csv
+
 from table2ascii import table2ascii, Alignment, PresetStyle
 
 
@@ -12,11 +14,13 @@ else:
     if sys.argv[1].endswith(".csv"):
         with open(sys.argv[1], "r") as file:
 
-            menu_header = []
-            h = file.readline().split(",")
-            menu_header.append(h)
+            menu_body = {}
+            
+            menu = csv.DictReader(file)
+            for row in menu:
+                ...
 
-            menu_body = file.readlines()
+            print(menu)
 
             # menu = table2ascii(
             #     header = menu_header,
@@ -25,8 +29,6 @@ else:
             # ) 
 
             # print(menu)
-            print(menu_body)
-            print(menu_header)
 
 
     else:
