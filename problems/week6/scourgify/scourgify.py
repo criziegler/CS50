@@ -13,10 +13,19 @@ elif len(sys.argv) == 4:
 else:
     if sys.argv[1].endswith(".csv") and sys.argv[2].endswith(".csv"):
         with open(sys.argv[1], "r") as file:
-
             students = list(csv.DictReader(file))
 
-            print(students)
+
+        with open(sys.argv[2], "w") as f:
+            for student in sorted(students, key=lambda student: student["name"].split(",")[1]):
+                last_name, first_name = student["name"].split(",", 1)
+                f_name = f"{first_name}, {last_name}"
+                print(f"{f_name}")
+                formatted_dict = {"name": f_name, "house": student["house"]}
+
+                print(formatted_dict)                
+                # writer = csv.DictWriter(f)
+                # writer.writerow({first_name}, {last_name}, student["home"])
 
 
 
