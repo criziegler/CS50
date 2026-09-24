@@ -15,19 +15,17 @@ else:
         with open(sys.argv[1], "r") as file:
             students = list(csv.DictReader(file))
 
-
         with open(sys.argv[2], "w") as f:
 
-            writer = csv.DictWriter(f, fieldnames=["name","house"])
+            writer = csv.DictWriter(f, fieldnames=["first","last","house"])
             writer.writeheader()
 
             for student in sorted(students, key=lambda student: student["name"].split(",")[1]):
                 last_name, first_name = student["name"].split(",", 1)
-                f_name = f"{first_name}, {last_name}"
+                # f_name = f"{first_name}, {last_name}"
 
-                formatted_dict = {"name": f_name, "house": student["house"]}
+                formatted_dict = {"first": first_name.strip(), "last": last_name.strip(), "house": student["house"]}
                 writer.writerow(formatted_dict)
-
 
 
     else:
