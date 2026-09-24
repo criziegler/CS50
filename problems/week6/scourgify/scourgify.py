@@ -3,30 +3,36 @@ import csv
 
 from tabulate import tabulate
 
+try:
 
-if len(sys.argv) == 1 or len(sys.argv) == 2:
-    sys.exit("Too few command-line arguments")
+    if len(sys.argv) == 1 or len(sys.argv) == 2:
+        sys.exit("Too few command-line arguments")
 
-elif len(sys.argv) == 4:
-    sys.exit("Too many command-line arguments")
-
-else:
-    if sys.argv[1].endswith(".csv") and sys.argv[2].endswith(".csv"):
-        with open(sys.argv[1], "r") as file:
-            students = list(csv.DictReader(file))
-
-        with open(sys.argv[2], "w") as f:
-
-            writer = csv.DictWriter(f, fieldnames=["first","last","house"])
-            writer.writeheader()
-
-            for student in sorted(students, key=lambda student: student["name"].split(",")[1]):
-                last_name, first_name = student["name"].split(",", 1)
-                # f_name = f"{first_name}, {last_name}"
-
-                formatted_dict = {"first": first_name.strip(), "last": last_name.strip(), "house": student["house"]}
-                writer.writerow(formatted_dict)
-
+    elif len(sys.argv) == 4:
+        sys.exit("Too many command-line arguments")
 
     else:
-        sys.exit("Not a CSV file")
+        if sys.argv[1].endswith(".csv") and sys.argv[2].endswith(".csv"):
+            with open(sys.argv[1], "r") as file:
+                students = list(csv.DictReader(file))
+
+            with open(sys.argv[2], "w") as after:
+
+                writer = csv.DictWriter(after, fieldnames=["first", "last", "house"], lineterminator="\n")
+                writer.writeheader()
+
+                for student in students:
+                    last, first = student["name"].split(",", 1)
+
+                    writer.writerow({
+                        "first": first.strip(),
+                        "last": last.strip(),
+                        "house": student["house"]
+                    })
+
+
+        else:
+            sys.exit("Not a CSV file")
+
+except FileNotFoundError:
+    sys.exit("Could not read invalid_file.csv")
