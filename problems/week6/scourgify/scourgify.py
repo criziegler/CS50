@@ -22,10 +22,9 @@ else:
                 f_name = f"{first_name}, {last_name}"
                 print(f"{f_name}")
                 formatted_dict = {"name": f_name, "house": student["house"]}
-
-                print(formatted_dict)                
-                # writer = csv.DictWriter(f)
-                # writer.writerow({first_name}, {last_name}, student["home"])
+            
+                writer = csv.DictWriter(f, fieldnames=["name","house"])
+                writer.writerow(formatted_dict)
 
 
 
