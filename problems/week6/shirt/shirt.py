@@ -10,7 +10,12 @@ try:
         sys.exit("Too many command-line arguments")
 
     else:
-        if sys.argv[1].endswith(".jpg") and sys.argv[2].endswith(".jpg"):
+        file_ending = (".jpg", ".jpeg", ".png")
+
+        image1 = sys.argv[1].lower()
+        image2 = sys.argv[2].lower()
+
+        if image1.endswith(file_ending) and image2.endswith(file_ending):
             shirt = Image.open("shirt.png")
 
             shirt_re = shirt.resize((1200,1600))
