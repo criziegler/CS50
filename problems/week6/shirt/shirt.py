@@ -1,5 +1,5 @@
 import sys
-from PIL import Image
+from PIL import Image, ImageOps
 
 try:
 
@@ -19,16 +19,14 @@ try:
             or image1.endswith(".png") and image2.endswith(".png")):
 
             shirt = Image.open("shirt.png")
-
-            size = (0,100,600,700)
             
             image = Image.open(sys.argv[1])
-            image_re = image.resize((600,800))
-            image_new = image_re.crop(size)
+            image_re = ImageOps.fit(image, shirt.size)
 
             after = Image.open(sys.argv[2])
-            after.paste(image_new)
+            after.paste(image_re)
             after.paste(shirt, shirt)
+            
             after.save(sys.argv[2])
 
         else:
