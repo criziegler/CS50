@@ -43,11 +43,11 @@ Python CS50 Course
     - [x] Re-requesting a Vanity Plate
     - [x] Refueling
 
-- [ ] Week6 submitted
+- [x] Week6 submitted
     - [x] Lines of Code
-    - [ ] Pizza Py
-    - [ ] Scourgify
-    - [ ] CS50 P-Shirt
+    - [x] Pizza Py
+    - [x] Scourgify
+    - [x] CS50 P-Shirt
 
 - [ ] Week7 submitted
     - [ ] NUMB3RS
