@@ -10,27 +10,27 @@ try:
         sys.exit("Too many command-line arguments")
 
     else:
-        file_ending = (".jpg", ".jpeg", ".png")
 
         image1 = sys.argv[1].lower()
         image2 = sys.argv[2].lower()
 
-        if image1.endswith(file_ending) and image2.endswith(file_ending):
+        if (image1.endswith(".jpg") and image2.endswith(".jpg") 
+            or image1.endswith(".jpeg") and image2.endswith(".jpeg") 
+            or image1.endswith(".png") and image2.endswith(".png")):
+
             shirt = Image.open("shirt.png")
 
-            shirt_re = shirt.resize((1200,1600))
-
-            size = (0,200,1200,1500)
+            size = (0,100,600,700)
             
             image = Image.open(sys.argv[1])
-            image_re = image.crop(size)
+            image_re = image.resize((600,800))
+            image_new = image_re.crop(size)
+            image_new.show()
 
             after = Image.open(sys.argv[2])
-            after_re = after.crop(size)
-            after_re.paste(image_re)
-            after_re.paste(shirt_re, (0,-300), shirt_re)
-
-            after_re.save(sys.argv[2])
+            after.paste(image_new)
+            after.paste(shirt, shirt)
+            after.save(sys.argv[2])
 
         else:
             sys.exit("Input and output have different extensions")
