@@ -25,7 +25,6 @@ try:
             image = Image.open(sys.argv[1])
             image_re = image.resize((600,800))
             image_new = image_re.crop(size)
-            image_new.show()
 
             after = Image.open(sys.argv[2])
             after.paste(image_new)
