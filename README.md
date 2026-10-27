@@ -1,64 +1,77 @@
-# CS50
+# CS50  
+
 Python CS50 Course
 
 ## TO DO
-- [x] Week0 submitted
-    - [x] Indoor Voice
-    - [x] Playback Speed
-    - [x] Making Faces
-    - [x] Einstein
-    - [x] Tip Calculator
 
-- [x] Week1 submitted
-    - [x] Deep Thought
-    - [x] Home Federal Savings Bank
-    - [x] File Extensions
-    - [x] Math Interpreter
-    - [x] Meal Time
+**~~Week0 submitted~~**  
 
-- [x] Week2 submitted
-    - [x] Camel Case
-    - [x] Coke Machine
-    - [x] Just setting up my twttr
-    - [x] Vanity Plates
-    - [x] Nutrition Facts
+- [x] Indoor Voice
+- [x] Playback Speed
+- [x] Making Faces
+- [x] Einstein
+- [x] Tip Calculator
 
-- [x] Week3 submitted
-    - [x] Fuel Gauge
-    - [x] Felipe's Taqueria
-    - [x] Grocery List
-    - [x] Outdated
+**~~Week1 submitted~~**  
 
-- [x] Week4 submitted
-    - [x] Emojize
-    - [x] Frank, Ian and Glen's Letters
-    - [x] Adieu, Adieu
-    - [x] Guessing Game
-    - [x] Little Professor
-    - [x] Bitcoin Price Index
+- [x] Deep Thought
+- [x] Home Federal Savings Bank
+- [x] File Extensions
+- [x] Math Interpreter
+- [x] Meal Time
 
-- [x] Week5 submitted
-    - [x] Testing my twittr
-    - [x] Back to the Bank
-    - [x] Re-requesting a Vanity Plate
-    - [x] Refueling
+**~~Week2 submitted~~**  
 
-- [x] Week6 submitted
-    - [x] Lines of Code
-    - [x] Pizza Py
-    - [x] Scourgify
-    - [x] CS50 P-Shirt
+- [x] Camel Case
+- [x] Coke Machine
+- [x] Just setting up my twttr
+- [x] Vanity Plates
+- [x] Nutrition Facts
 
-- [ ] Week7 submitted
-    - [ ] NUMB3RS
-    - [ ] Watch on YouTube
-    - [ ] Working 9 to 5
-    - [ ] Regular, um, Expressions
-    - [ ] Response Validation
+**~~Week3 submitted~~**  
 
-- [ ] Week8 submitted
-    - [ ] Seasons of Love
-    - [ ] Cookie Jar
-    - [ ] CS50 Shirtificate
+- [x] Fuel Gauge
+- [x] Felipe's Taqueria
+- [x] Grocery List
+- [x] Outdated
 
-- [ ] Final Project submitted
+**~~Week4 submitted~~**  
+
+- [x] Emojize
+- [x] Frank, Ian and Glen's Letters
+- [x] Adieu, Adieu
+- [x] Guessing Game
+- [x] Little Professor
+- [x] Bitcoin Price Index
+
+**~~Week5 submitted~~**  
+
+- [x] Testing my twittr
+- [x] Back to the Bank
+- [x] Re-requesting a Vanity Plate
+- [x] Refueling
+
+**~~Week6 submitted~~**  
+
+- [x] Lines of Code
+- [x] Pizza Py
+- [x] Scourgify
+- [x] CS50 P-Shirt
+
+**Week7**  
+
+- [ ] NUMB3RS
+- [ ] Watch on YouTube
+- [ ] Working 9 to 5
+- [ ] Regular, um, Expressions
+- [ ] Response Validation
+
+**Week8**  
+
+- [ ] Seasons of Love
+- [ ] Cookie Jar
+- [ ] CS50 Shirtificate
+
+**Final**  
+
+- [ ] Final Project  
