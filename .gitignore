@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+ Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
@@ -228,12 +228,3 @@ __marimo__/
 # Folder
 /Shorts
 /lecture
-
-
-# OS
-.DS_Store
-
-# Folder
-/Shorts
-/lecture
-
