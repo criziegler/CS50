@@ -226,5 +226,6 @@ __marimo__/
 .DS_Store
 
 # Folder
+/example
 /Shorts
 /lecture
